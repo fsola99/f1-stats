@@ -1,3 +1,10 @@
+<!-- templates/stats/index.html -->
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
 <h1>Standings for season {{ season }}</h1>
 <ul>
     {% for standing in standings %}
@@ -13,3 +20,5 @@
     </select>
     <button type="submit">Change Season</button>
 </form>
+
+{% endblock %}
