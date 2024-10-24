@@ -1,0 +1,6 @@
+<h1>Circuits</h1>
+<ul>
+    {% for circuit in circuits %}
+        <li>{{ circuit.name }} - {{ circuit.location }} ({{ circuit.country }})</li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,15 @@
+<h1>Standings for season {{ season }}</h1>
+<ul>
+    {% for standing in standings %}
+        <li>{{ standing.driver.name }} - Position: {{ standing.position }} - Points: {{ standing.points }}</li>
+    {% endfor %}
+</ul>
+<form method="get">
+    <label for="season">Choose a season:</label>
+    <select name="season" id="season">
+        <option value="2023">2023</option>
+        <option value="2022">2022</option>
+        <!-- Agrega más opciones -->
+    </select>
+    <button type="submit">Change Season</button>
+</form>
